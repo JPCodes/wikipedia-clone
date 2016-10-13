@@ -83,3 +83,12 @@ hr {
 .p-right {
   text-align: right;
 }
+
+/* Footer */
+.footer {
+  display: inline-block;
+  width: 85%;
+  float: right;
+  font-size: .9em;
+  text-align: right;
+}

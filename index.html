@@ -83,22 +83,24 @@
       </aside>
 
       <div class="content">
-        <div class="row">
-          <div class="top-menu">
-            <button type="button" class="btn btn-default navbar-btn navbar-left">Main Page</button>
-            <button type="button" class="btn btn-default navbar-btn navbar-left">Talk</button>
-            <form class="navbar-form navbar-right" role="search">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-              </div>
-              <button type="submit" class="btn btn-default">Search</button>
-            </form>
-            <button type="button" class="btn btn-default navbar-btn navbar-right">View History</button>
-            <button type="button" class="btn btn-default navbar-btn navbar-right">View Source</button>
-            <button type="button" class="btn btn-default navbar-btn navbar-right">Read</button>
-          </div>
-          
-        </div>
+        <p class="p-right">Not logged in  <a href="#">Talk</a> <a href="#">Contributions</a> <a href="#">Create account</a> <a href="#">Log in</a></p>
+
+        <ul class="nav nav-tabs">
+            <li role="presentation" class=""><a href="#">Main Page</a></li>
+            <li role="presentation" class=""><a href="#">Talk</a></li>
+            <li role="presentation" class="navbar-right"><a href="#">View History</a></li>
+            <li role="presentation" class="navbar-right"><a href="#">View Source</a></li>
+            <li role="presentation" class="active navbar-right"><a href="#">Read</a></li>
+            <li>
+              <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+            </li>
+        </ul>
+
         <div class="row jumbotron"> <!-- Start Jumbotron -->
           <div class="welcome float-left">
             <h3>Welcome to <a href="#">Wikipedia</a>,</h3> <br>
@@ -226,44 +228,44 @@
             <hr>
             <p>Wikipedia is hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of other projects:</p>
             <div class="col-md-4">
-              <img src="" alt="">
+              <img class="float-left" src="img/one.png" alt="">
               <h5>Commons</h5>
               <p>Free media repository</p>
-              <img src="" alt="">
+              <img class="float-left" src="img/two.png" alt="">
               <h5>Wikibooks</h5>
               <p>Free textbooks and manuals</p>
-              <img src="" alt="">
+              <img class="float-left" src="img/three.png" alt="">
               <h5>Wikiquote</h5>
               <p>Collection of quotations</p>
-              <img src="" alt="">
+              <img class="float-left" src="img/four.png" alt="">
               <h5>Wikiversity</h5>
               <p>Free learning materials and activities</p>
             </div>
             <div class="col-md-4">
-              <img src="" alt="">
+              <img class="float-left" src="img/five.png" alt="">
               <h5>Mediawiki</h5>
               <p>Wiki software development</p>
-              <img src="" alt="">
+              <img class="float-left" src="img/six.png" alt="">
               <h5>Wikidata</h5>
               <p>Free knowledge base</p>
-              <img src="" alt="">
+              <img class="float-left" src="img/seven.png" alt="">
               <h5>Wikisource</h5>
               <p>Free-content library</p>
-              <img src="" alt="">
+              <img class="float-left" src="img/eight.png" alt="">
               <h5>Wikivoyage</h5>
               <p>Free travel guide</p>
             </div>
             <div class="col-md-4">
-              <img src="" alt="">
+              <img class="float-left" src="img/nine.png" alt="">
               <h5>Meta-wiki</h5>
               <p>Wikimedia project coordination</p>
-              <img src="" alt="">
+              <img class="float-left" src="img/ten.png" alt="">
               <h5>Wikinews</h5>
               <p>Free content news</p>
-              <img src="" alt="">
+              <img class="float-left" src="img/eleven.png" alt="">
               <h5>Wikispecies</h5>
               <p>Directory of species</p>
-              <img src="" alt="">
+              <img class="float-left" src="img/twelve.png" alt="">
               <h5>Wiktionary</h5>
               <p>Dictionary and Thesauraus</p>
             </div>
@@ -281,6 +283,13 @@
       </div><!--End Wikipedia languages -->
 
       </div> <!-- End Content -->
+
+      <div class="footer">
+        <p>Text is available under the Creative Commons Attribution-ShareAlike License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.</p>
+
+        <p>Privacy policy About Wikipedia Disclaimers Contact Wikipedia Developers Cookie statement Mobile view</p>
+     </div>
+
     </div> <!-- End Container -->
   </body>
 </html>
