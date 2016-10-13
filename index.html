@@ -5,6 +5,7 @@
     <title>Wikipedia Clone</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="js/bootstrap.min.js" rel="JavaScript" type="text/js">
   </head>
   <body>
     <div class="container-fluid">
@@ -81,18 +82,23 @@
 
       </aside>
 
-      <div class="top-menu"> <!-- Start Top Menu -->
-        <h5> Lorem </h5>
-        <p>lorem ipsum</p>
-      </div> <!-- End Top Menu -->
-
       <div class="content">
-        <!-- <div class="row banner">
-          <img src="" alt="Wikimedia Foundation Logo" />
-          <p>Should Wikimedia content be licensed under the latest Creative Commons license? Participate in the discussion between October 5 and November 8!</p>
-          <img src="" alt="CC" />
-        </div> -->
-
+        <div class="row">
+          <div class="top-menu">
+            <button type="button" class="btn btn-default navbar-btn navbar-left">Main Page</button>
+            <button type="button" class="btn btn-default navbar-btn navbar-left">Talk</button>
+            <form class="navbar-form navbar-right" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Search</button>
+            </form>
+            <button type="button" class="btn btn-default navbar-btn navbar-right">View History</button>
+            <button type="button" class="btn btn-default navbar-btn navbar-right">View Source</button>
+            <button type="button" class="btn btn-default navbar-btn navbar-right">Read</button>
+          </div>
+          
+        </div>
         <div class="row jumbotron"> <!-- Start Jumbotron -->
           <div class="welcome float-left">
             <h3>Welcome to <a href="#">Wikipedia</a>,</h3> <br>
@@ -100,17 +106,17 @@
             <p><a href="#">5,261,567</a> articles in <a href="#">English</a></p>
           </div>
           <div class="portals">
-            <ul class="float-right text-nowrap">
+            <ul class="float-right">
               <li><a href="#">Society</a></li>
               <li><a href="#">Technology</a></li>
               <li><a href="#">All Portals</a></li>
             </ul>
-            <ul class="float-right text-nowrap">
+            <ul class="float-right">
               <li><a href="#">History</a></li>
               <li><a href="#">Mathematics</a></li>
               <li><a href="#">Science</a></li>
             </ul>
-            <ul class="float-right text-nowrap">
+            <ul class="float-right">
               <li><a href="#">Arts</a></li>
               <li><a href="#">Biography</a></li>
               <li><a href="#">Geography</a></li>
@@ -125,9 +131,27 @@
                 <h4 class="panel-title">From today's featured article</h4>
               </div>
               <div class="panel-body"> <!--Start panel-body-->
+                <img class="img-margin-right float-left img-responsive" src="img/solar.jpg" alt="" />
                 <p>
                   The Earth-grazing meteoroid of 13 October 1990 entered the atmosphere above Czechoslovakia and Poland and, after 9.8 seconds, returned to space. Named EN131090, the 44-kilogram (97 lb) meteoroid was observed travelling 409 kilometres (254 mi) at a speed of 42 km/s (26 mi/s) by cameras of the European Fireball Network. Its apparent magnitude peaked at −6.3, several times brighter than Venus's peak magnitude. Observations of such events are quite rare; this was the second recorded by scientific astronomical instruments (after the 1972 Great Daylight Fireball) and the first recorded from two distant positions, which enabled the calculation of several of its orbital characteristics. The encounter with Earth significantly changed its orbit and, to a smaller extent, some of its physical properties, including its mass and the structure of its upper layer. If the meteoroid had reached the lower atmosphere, it would have overheated and exploded high above the ground, leaving at most a few small meteorites that posed no danger to the Earth's surface. (Full article...)
                 </p>
+                <p>Recently featured: <a href="#">Gold dollar</a> <a href="#">Zapata rail</a> <a href="#">Wendell Willkie</a> <a href="#">Archive</a> <a href="#">By email</a> <a href="#">More featured articles...</a></p>
+              </div>  <!--End panel-body-->
+              <div class="panel-heading">
+                <h4 class="panel-title">Did you know...</h4>
+              </div>
+              <div class="panel-body"> <!--Start panel-body-->
+                <img class="img-margin-left float-right img-responsive" src="img/edmund.jpg" alt="Edmund" />
+                <ul>
+                  <li>... that after Edmund Kalau (pictured) spent his childhood in the Hitler Youth, he converted to Christianity and served in Palau and Yap in the Liebenzell Mission?</li>
+                  <li>... that the philosophy journal Between the Species took its name from a fictional periodical mentioned in a George Abbe novel?</li>
+                  <li>... that the science fiction video game Tharsis, inspired by the sinking of the whaling ship Essex, allows the crew of the player's spacecraft to use cannibalism to survive?</li>
+                  <li>... that both the 5-8 Club and Matt's Bar, two Minneapolis eateries on the same street, claim to have invented the Juicy Lucy cheeseburger?</li>
+                  <li>... that the band The Mutants developed from the idea of an album set out to retrace the roots of punk, new wave, and ska, featuring an all-star cast of punk musicians?</li>
+                  <li>... that Anne Ramberg was awarded the H. M. The King's Medal of 12th size to wear on a blue ribbon for her work in the Swedish justice system?</li>
+                  <li>... that Tony Award-winning Broadway actress and singer Lillian Hayman played Sadie Gray on the American soap opera One Life to Live for 17 years?</li>
+                  <li>... that if you bend indium it might cry?</li>
+                </ul>
                 <p>Recently featured: <a href="#">Gold dollar</a> <a href="#">Zapata rail</a> <a href="#">Wendell Willkie</a> <a href="#">Archive</a> <a href="#">By email</a> <a href="#">More featured articles...</a></p>
               </div>  <!--End panel-body-->
             </div> <!-- End Left Panel -->
@@ -139,6 +163,7 @@
                 <h4 class="panel-title">In the news</h4>
               </div>
               <div class="panel-body">
+                <img class="img-margin-left float-right img-responsive" src="img/king.jpg" alt="" />
                 <ul>
                   <li>King of Thailand Bhumibol Adulyadej (pictured), the world's longest-serving head of state, dies at the age of 88.</li>
                   <li>Bob Dylan is awarded the Nobel Prize in Literature for "having created new poetic expressions within the great American song tradition".</li>
@@ -147,17 +172,37 @@
                   <li>Bernard L. Feringa, Jean-Pierre Sauvage, and Sir J. Fraser Stoddart are awarded the Nobel Prize in Chemistry for the synthesis of molecular machines.</li>
                 </ul>
               </div>
+              <div class="panel-heading">
+                <h4 class="panel-title">On this day...</h4>
+              </div>
+              <div class="panel-body">
+                <p>October 13</p>
+                <img class="img-margin-left float-right img-responsive" src="img/king.jpg" alt="" />
+                <ul>
+                  <li>1710 – Queen Anne's War: The French surrender ending the Siege of Port Royal gave the British permanent possession of Nova Scotia.</li>
+                  <li>1812 – War of 1812: British troops and Mohawk warriors repelled an American invasion from across the Niagara River at the Battle of Queenston Heights near Queenston, Ontario.</li>
+                  <li>1911 – Prince Arthur, a son of Queen Victoria, became the first Governor General of Canada of royal descent, as well as the first Prince of Great Britain and Ireland to hold that position.</li>
+                  <li>1921 – The Soviet republics of Russia, Armenia, Azerbaijan, and Georgia signed the Treaty of Kars with the Grand National Assembly of Turkey to establish the contemporary borders between Turkey and the South Caucasus states.</li>
+                  <li>1958 – The first book featuring the English children's literature character Paddington Bear (statue pictured), created by Michael Bond and primarily illustrated by Peggy Fortnum, was published.</li>
+                </ul>
+              </div>
             </div> <!-- End Right Panel -->
           </div>
         </div> <!-- End Featured Article and News Columns -->
 
         <div class="row"> <!-- Start Today's Featured Picture -->
           <div class="col-md-12">
-            <h4>Today's featured picture</h4>
-            <img src="" alt="" />
-            <p>The Peasant Wedding is a 1567 genre painting by the Flemish Renaissance painter and printmaker Pieter Bruegel the Elder, one of many depicting peasant life. It is housed in the Kunsthistorisches Museum, Vienna.</p>
-            <p>Painting: Pieter Bruegel the Elder</p>
-            <p>Recently featured: Helix Nebula Airline meal Odissi Archive More featured pictures...</p>
+            <div class="panel panel-info"> <!--Start Featured Picture Panel-->
+              <div class="panel-heading">
+                <h4 class="panel-title">Today's featured picture</h4>
+              </div>
+              <div class="panel-body">
+                <img class="img-center" src="img/dining.jpg" alt="the peasant wedding painting" />
+                <p class="p-center">The Peasant Wedding is a 1567 genre painting by the Flemish Renaissance painter and printmaker Pieter Bruegel the Elder, one of many depicting peasant life. It is housed in the Kunsthistorisches Museum, Vienna.</p>
+                <p class="p-center">Painting: Pieter Bruegel the Elder</p>
+                <p class="p-right">Recently featured: Helix Nebula Airline meal Odissi Archive More featured pictures...</p>
+              </div>
+            </div><!--End Featured Picture Panel-->
           </div>
         </div> <!-- End Today's Featured Picture -->
 
