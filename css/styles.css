@@ -1,0 +1,13 @@
+.sidebar {
+  float: left;
+  width: 15%;
+}
+
+.content {
+  display: inline-block;
+  width: 85%;
+}
+
+.banner {
+  border: 5px solid #87CEEB;
+}
